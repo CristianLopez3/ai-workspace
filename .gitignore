@@ -1,0 +1,30 @@
+# Claude Workspace
+.claude/
+*.local
+*.env
+*.private
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Node/npm
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
+*.sublime-project
+
+# Temporal
+*.tmp
+.cache/
