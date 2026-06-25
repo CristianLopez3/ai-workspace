@@ -10,7 +10,19 @@
 - Disponible variables: $1,060,000/mes = $265,000/sem
 
 - Bancos monitoreados: LuloBank, Nequi, RappiCard, Davivienda
-- Reportes: Semanales (lunes)
+- Reportes: Semanales (lunes 7 AM)
+
+## Labels Gmail y Queries
+
+| Banco | Label | Email origen |
+|-------|-------|-------------|
+| LuloBank | Gastos/LuloBank | — |
+| Nequi | Gastos/Nequi | — |
+| RappiCard | Gastos/RappiCard | — |
+| Davivienda | Gastos/Davivienda | — |
+| Arriendo | Gastos/Arriendo | noreply@simiinmobiliarias.com |
+
+**Query patrón:** `label:Gastos/[Banco] after:FECHA_INICIO before:FECHA_FIN`
 
 ---
 
@@ -43,7 +55,7 @@ electronica, fashion, cosmetica, belleza, peluqueria, bolsas, accesorios
 - Boutiques y salones de belleza
 
 **LIMITE SEMANAL:** $70,000  
-**ALERTA:** Si exceeds 90% ($63,000)
+**ALERTA:** Si exceeds 85% ($63,000)
 
 ---
 
@@ -61,7 +73,7 @@ playstation, xbox, switch, audible, paramount
 - Videojuegos
 
 **LIMITE SEMANAL:** $52,500  
-**ALERTA:** Si exceeds 90% ($47,250)
+**ALERTA:** Si exceeds 85% ($47,250)
 
 ---
 
@@ -79,7 +91,7 @@ aventura, tour, resort
 - Actividades turísticas
 
 **LIMITE SEMANAL:** $42,500  
-**ALERTA:** Si exceeds 90% ($38,250)
+**ALERTA:** Si exceeds 85% ($38,250)
 
 ---
 
@@ -100,7 +112,7 @@ NOTA: Suplementos gym ya estan en fijos ($300K)
 - Ópticas
 
 **LIMITE SEMANAL:** $35,000  
-**ALERTA:** Si exceeds 90% ($31,500)
+**ALERTA:** Si exceeds 85% ($31,500)
 
 ---
 
@@ -117,7 +129,7 @@ donacion, contribucion, gastos varios, hobby, libros, lentes
 - Seguros
 
 **LIMITE SEMANAL:** $26,250  
-**ALERTA:** Si exceeds 90% ($23,625)
+**ALERTA:** Si exceeds 85% ($23,625)
 
 ---
 
@@ -204,8 +216,8 @@ Ignorar transacciones si:
 ## Alertas Automaticas
 
 Generar alerta si:
-- Categoria excede 90% presupuesto semanal
-- Transaccion unica >$500,000
+- Categoria excede 85% presupuesto semanal
+- Transaccion unica >$400,000
 - Total semanal >$1,060,000
 
 ---
